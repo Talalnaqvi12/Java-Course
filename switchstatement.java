@@ -115,6 +115,143 @@ System.out.println("Enter the correct number please ");
 
 // the default statement will run if there is no match like there are only 7 days is a week but if we put 8 or greater than 8 it will 
 // run default statment cuz no case matched
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// lets talk about the new switch statement release by java
+// this new switch statement can be use if we want to avoid writing break after every case we can -> for all case or yield to get rid of break statement
+// and secondly if we can write two conditions or two cases in one case
+
+String dayName="";
+
+
+
+// imagine we are creating an alarm in which for each day or for some days we will set different alarm time
+
+
+// switch(dayName){
+//     case  "Monday" ,"Tuesday" :
+//     System.out.println("Set an alarm for 6 am ");
+// //above we write two case in one case or two conditions
+// break;
+// // when we write the code by using : only we need to put the break after every case statement
+
+// case "Wednesday":
+//     System.out.println("Set an alarm for 8 am");
+
+// break;
+//     default:
+//             System.out.println("Set an alarm for 10 pm");
+
+// }
+
+
+
+
+// to get rid from writing break statement on every case we can use this syntax below
+
+
+
+
+String Result="" ;
+
+
+
+
+
+switch(dayName){
+    case  "Monday" ,"Tuesday" ->
+    System.out.println("Set an alarm for 6 amwith arrow this time");
+// we use -> on every statement to avoid break at every case
+
+case "Wednesday"-> System.out.println("Set an alarm for 8am with arrow this time");
+
+
+    default-> System.out.println("Set an alarm for 10 pm with arrow this time");
+
+}
+
+
+
+
+// one more update is we can use swtich as an expression and in real world when we get the expression we can apply processing base 
+
+// on the requirement we can also do that see below code
+
+
+//Switch with Expression
+
+switch(dayName){
+    case  "Monday" ,"Tuesday" ->
+    
+    Result= "6am";
+// we use -> on every statement to avoid break at every case
+
+case "Wednesday"->Result= "8am";
+
+
+    default-> Result= "10am";
+
+}
+
+
+// now lets print the value in main method to see if we got access or Result or not 
+ System.out.println(Result);
+
+
+
+
+
+
+
+
+
+ // lets say we want switch to return a value or we are expecting from switch that it will return a value
+ //how can we do that 
+
+
+
+String Result1="";
+ 
+Result1 =switch(dayName){
+    // we are expecting from switch to return a value  then in this case we dont need to even assign it to Result variable 
+    // or use return statement 
+    case  "Monday" ,"Tuesday" ->"16am";
+
+case "Wednesday"-> "18am";
+
+
+    default->  "20am";
+
+};
+System.out.println(Result1) ;
+
+
+
+
+
+
+
+
+
+// Summary 
+// how to write swtich with  break statement;
+// how to avoid writing break for every case using -> or : yield
+//how can we pass two case or two conditions in one case
+// how can we extract data by using a varaiable in switch statement so that we can perform some operation on that varaiable
+// how can we write switch if we expect from switch statement to return something 
     }
 
 }
