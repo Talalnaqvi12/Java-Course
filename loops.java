@@ -64,8 +64,84 @@ public class loops {
         }
         i++;
     }
+
+
+
+
+
+
+
+
+
+
+    //lets now understand the concept of do while loop 
+    //see in the while loop it will always check the condition is true or not if the condition is true only than it will execute the code 
+    // but there are certain conditions in which you want to run the loop for atleast at once even if the condition is false 
+    // in this situation do while loops step in
+
+int atif = 5;
+
+    do {
+
+        // lets say you want to send a message to your friend even if the network is not avaiable to your friend device at once 
+        // so eeven if there is no network atleast you sent the message to receive a message that network is not availaBLE  
+        // so in the do statement it will run the loop even if the condition is  not true 
+
+
+        System.out.println("Hello Atif");
+        atif ++ ;
+    }while(atif<=4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //lets understand for loop
+
+
+// in for loop we intialize, add condition and increment or decremeent the value on same line with keyword for
+
+
+
+
+    
+for(int k=0;k<5;k++){
+
+System.out.println("VALUE OF I IS " + k);
+
+}
+
+
+
+
+// I want to print the each day from monday to sunday and then on every day i want to print the 24 hours 
+
+
+
+
+
     }
 
+
+
+
+
+
+
+
+
+
+
+   
     
 
 }
